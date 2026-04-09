@@ -17,8 +17,8 @@ function closeLightbox() {
   document.body.style.overflow = '';
 }
 
-// Open on thumbnail click
-document.querySelectorAll('.gallery-thumb').forEach(function(img) {
+// Open on thumbnail or hero click
+document.querySelectorAll('.gallery-thumb, .project-hero').forEach(function(img) {
   img.addEventListener('click', function() {
     openLightbox(this.src, this.alt);
   });

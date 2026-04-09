@@ -11,15 +11,16 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  --gutter: 32px;
 }
 
 body {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'EB Garamond', Garamond, Georgia, serif;
   background-color: #1a1a1a;
   background-image: url('../images/background.jpg'); /* optional: add a background texture/image */
   background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  background-repeat: repeat;
+  background-size: auto;
   color: #1a1a1a;
   line-height: 1.7;
 }
@@ -41,15 +42,20 @@ body {
    ============================================================ */
 
 .site-header {
-  padding: 60px 32px 48px;
+  padding: 0 var(--gutter) 48px;
   border-bottom: 1px solid #d8d3cc;
 }
 
 .site-title {
-  font-size: 2.4rem;
-  font-weight: normal;
+  font-size: 3.6rem;
+  font-weight: 700;
   letter-spacing: 0.04em;
-  margin-bottom: 16px;
+  line-height: 1;
+  margin: 0 calc(-1 * var(--gutter)) 24px;
+  color: #fff;
+  background-color: #000;
+  display: block;
+  padding: 24px var(--gutter) 24px;
 }
 
 .site-intro {
@@ -76,6 +82,7 @@ body {
   font-size: 1.4rem;
   font-weight: normal;
   letter-spacing: 0.02em;
+  line-height: 1;
   margin-bottom: 24px;
 }
 
@@ -86,6 +93,7 @@ body {
   height: auto;
   margin-bottom: 24px;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .project-text {
@@ -171,8 +179,12 @@ body {
    ============================================================ */
 
 @media (max-width: 600px) {
+  html {
+    --gutter: 20px;
+  }
+
   .site-header {
-    padding: 40px 20px 36px;
+    padding: 0 var(--gutter) 36px;
   }
 
   .site-title {
@@ -180,7 +192,7 @@ body {
   }
 
   .project {
-    padding: 40px 20px;
+    padding: 40px var(--gutter);
   }
 
   .project-gallery {
