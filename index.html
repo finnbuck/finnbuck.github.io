@@ -1,21 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finn — Art & Technology</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Hello world.</h1>
+
+  <div class="page-wrap">
+
+    <header class="site-header">
+      <h1 class="site-title">Finn</h1>
+      <p class="site-intro">
+        A collection of art and technology projects.
+      </p>
+    </header>
+
+    <main class="projects">
+
+      <!-- ============================================================
+           PROJECT TEMPLATE — copy this block to add a new project
+           ============================================================
+
+      <article class="project">
+        <h2 class="project-title">Project Title</h2>
+        <img class="project-hero" src="images/your-hero-image.jpg" alt="Description">
+        <p class="project-text">
+          Describe the project here. Can be multiple paragraphs.
+        </p>
+        <div class="project-gallery">
+          <img class="gallery-thumb" src="images/secondary-1.jpg" alt="Description">
+          <img class="gallery-thumb" src="images/secondary-2.jpg" alt="Description">
+          <img class="gallery-thumb" src="images/secondary-3.jpg" alt="Description">
+        </div>
+      </article>
+
+           ============================================================ -->
+
+      <article class="project">
+        <h2 class="project-title">Example Project</h2>
+        <img class="project-hero" src="images/placeholder-hero.jpg" alt="Hero image placeholder">
+        <p class="project-text">
+          This is placeholder text for the first project. Replace this with a description
+          of your work — materials used, process, motivation, whatever feels right.
+        </p>
+        <div class="project-gallery">
+          <img class="gallery-thumb" src="images/placeholder-1.jpg" alt="Secondary image 1">
+          <img class="gallery-thumb" src="images/placeholder-2.jpg" alt="Secondary image 2">
+          <img class="gallery-thumb" src="images/placeholder-3.jpg" alt="Secondary image 3">
+        </div>
+      </article>
+
+    </main>
+
+  </div><!-- /.page-wrap -->
+
+  <!-- Lightbox modal -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
