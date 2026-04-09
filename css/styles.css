@@ -30,7 +30,7 @@ body {
    ============================================================ */
 
 .page-wrap {
-  max-width: 750px;
+  max-width: 975px;
   margin: 0 auto;
   background-color: #f5f2ee;
   min-height: 100vh;
@@ -59,7 +59,7 @@ body {
 }
 
 .site-intro {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #555;
   max-width: 520px;
 }
@@ -79,8 +79,8 @@ body {
 }
 
 .project-title {
-  font-size: 1.4rem;
-  font-weight: normal;
+  font-size: 1.7rem;
+  font-weight: 700;
   letter-spacing: 0.02em;
   line-height: 1;
   margin-bottom: 24px;
@@ -97,7 +97,7 @@ body {
 }
 
 .project-text {
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   color: #333;
   margin-bottom: 28px;
   max-width: 640px;
@@ -188,11 +188,16 @@ body {
   }
 
   .site-title {
-    font-size: 1.9rem;
+    font-size: 1.2rem;
   }
 
   .project {
     padding: 40px var(--gutter);
+  }
+
+  .site-intro,
+  .project-text {
+    font-size: 1.1rem;
   }
 
   .project-gallery {
