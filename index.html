@@ -16,7 +16,13 @@
     <header class="site-header">
       <h1 class="site-title">Finn Buck</h1>
       <p class="site-intro">
-        Drawing with math, doing math with drawings.
+        Welcome to my online portfolio. Below are a list of projects I have worked on in the past years.<br>
+        <br>
+        <b>My background:</b><br>
+        <br>
+        <em>BSc Mathematics and Philosophy</em>, University of St Andrews (2019--2023)<br>
+        <em>MSc Creative Intelligence and Technology</em>, Leiden University (2024--2026, <em>currently ongoing</em>)
+
       </p>
     </header>
 
@@ -45,8 +51,10 @@
         <h2 class="project-title">L-System Gardens</h2>
         <img class="project-hero" src="images/LSystem-best.jpg" alt="L-System Drawing 1">
         <p class="project-text">
-          This is placeholder text for the first project. Replace this with a description
-          of your work — materials used, process, motivation, whatever feels right.
+          The idea behind this solo project was to leverage so-called Lindenmayer systems in order to programatically generate visually pleasing drawings of plants.
+          Previous implementations of L-System code have been mostly for mathematical interest with single plantlike structures being displayed individually.
+          Using a WYSIWYG editor programmed in Javascript with p5.js, I was able to experiment with the visual effect of layering hundreds of separately 
+          generated L-Systems over each other with some random colour variation. The results look remarkably organic coming from such a simple algorithm.
         </p>
         <div class="project-gallery">
           <img class="gallery-thumb" src="images/Lsystem-filler.jpg" alt="L-System Drawing 2" loading="lazy">
@@ -56,10 +64,15 @@
       </article>
 
       <article class="project">
-        <h2 class="project-title">VR</h2>
+        <h2 class="project-title">Exploring Networks in VR</h2>
         <img class="project-hero" src="images/VR-primary.png" alt="VR" loading="lazy">
         <p class="project-text">
-          Placeholder text for the VR project.
+          Data that takes the form of a network is often difficult to parse visually. In this group project we wanted to see whether allowing people to 
+          explore networked data by flying through a 3D representation of it in virtual reality would help them to better understand how things were connected.
+          As a our dataset we chose the filmography of Tarantino films along with all the actors who have acted in at least two of them. By connecting each actor
+          to each film they had acted in a complicated web representing the clique surrounding the director was created. I taught myself how to use Unity to 
+          program an interactive virtual reality system for the (by then alredy quite old) Oculus Go headset. Results from user testing were mixed, but this may
+          have been down to the nausea created by the older headset.
         </p>
         <div class="project-gallery">
           <img class="gallery-thumb" src="images/VR-secondary.png" alt="VR secondary" loading="lazy">
@@ -68,10 +81,15 @@
       </article>
 
       <article class="project">
-        <h2 class="project-title">Mirror</h2>
+        <h2 class="project-title">Mirror of Time</h2>
         <img class="project-hero" src="images/Mirror-primary.jpg" alt="Mirror" loading="lazy">
         <p class="project-text">
-          Placeholder text for the Mirror project.
+          This installation was the result of a group project and was exhibited for several days at the V2_ lab for the unstable media.
+          Visitors would walk up to a guilded frame and a webcam would quickly send a picture of their faces through a repurposed gaming PC
+          which was hidden behind a curtain. The PC would then run a StyleGAN based aging filter on a picture of the users face before sending
+          it to the screen hidden behind the guilded frame. The screen adjusted in near realtime and the viewer would see their face depicted as
+          older the closer they stepped to the camera. Between the dark lighting and using a somewhat temperamental algorithm for recognising faces
+          the results became quite chaotic. This gave them an emergent eerie quality that would have been hard to achieve had we set out to do it deliberately.
         </p>
         <div class="project-gallery">
           <img class="gallery-thumb" src="images/Mirror-secondary.jpg" alt="Mirror secondary" loading="lazy">
@@ -80,10 +98,16 @@
       </article>
 
       <article class="project">
-        <h2 class="project-title">Hammer</h2>
+        <h2 class="project-title">Wooden Anvils</h2>
         <img class="project-hero" src="images/Hammer-primary.jpeg" alt="Hammer" loading="lazy">
         <p class="project-text">
-          Placeholder text for the Hammer project.
+          An apocryphal account of Pythagoras discovering musical harmony by listening to blacksmiths beat on anvils of different sizes inspired this project.
+          I wanted to create a way for two people to discover the interplay of harmony and dissonance while striking objects with hammers. I achieved this by
+          attaching sensitive accelerometers to chunks of wood and then runnign the signal from these sensors through an ethernet cable to an Arduino which
+          would then send the sensor data to a synthesising program known as Pure Data. Extensive research went into synthesising metallic and bell-like sounds
+          from scratch in order to create an interactive experience where particpants could strike the wooden blocks with hammers and hear a metallic riging sound
+          from the surrounding speakers as if they had struck a metallic object. The advantage of using hammers was that it allowed the two participants sitting
+          across from each other in chairs to visually be able to communicate the timings of their strikes.
         </p>
         <div class="project-gallery">
           <img class="gallery-thumb" src="images/Hammer-secondary.jpeg" alt="Hammer secondary" loading="lazy">
@@ -91,10 +115,16 @@
       </article>
 
       <article class="project">
-        <h2 class="project-title">LSTM</h2>
+        <h2 class="project-title">LSTM Experiments</h2>
         <img class="project-hero" src="images/LSTM-primary.jpg" alt="LSTM" loading="lazy">
         <p class="project-text">
-          Placeholder text for the LSTM project.
+          These are the outputs of a TenserFlow implementation of an Long Short-Term Memory deep learning model, which is a type of Recursive Neural Network.
+          I was intrigued by the felxibility of this system and the fact that it could be coaxed into outputting the answers to simple subtraction and addition
+          problems as drawings of digits. Here we can see several of these outputs, each collumn with slightly varying model setups. In one case I observed the
+          impact of decreasing the batch size during training and in another case I observed what happened when more LSTM layers were added either as encoding or
+          as decoding steps. The ghostly outlines of digits resulting from the models trying to "hedge their bets" are interesting to me as a look into the strange
+          processes going on within a neural network.
+          
         </p>
         <div class="project-gallery">
           <img class="gallery-thumb" src="images/LSTM-secondary.jpg" alt="LSTM secondary" loading="lazy">
