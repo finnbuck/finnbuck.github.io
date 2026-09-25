@@ -17,7 +17,7 @@
     <header class="site-header">
       <h1 class="site-title">Finn Buck</h1>
       <p class="site-intro">
-        I'm a master's student graduating in Jan 2027 and I'm interested in researching how humans and AI can work together effectively on hard problems. In my research, I use techniques from machine learning to gain insights into how human creativity and problem solving works.
+        I'm a master's student graduating in Jan 2027 and I'm interested in how humans and machines can work together to be creative. In my research, I use techniques from machine learning to gain insights into how human creativity and problem solving works.
         Below is a list of projects I have worked on in the past years.<br>
         <br>
         <b>My background:</b><br>
@@ -49,6 +49,23 @@
            ============================================================ -->
 
       <article class="project">
+        <h2 class="project-title">Mirror of Time</h2>
+        <img class="project-hero" src="images/Mirror-primary.jpg" alt="Mirror" loading="lazy">
+        <p class="project-text">
+          This installation was the result of a group project and was exhibited for several days at the V2_ lab for the unstable media.
+          Visitors would walk up to a gilded frame and a webcam would quickly send a picture of their faces through a repurposed gaming PC
+          which was hidden behind a curtain. The PC would then run a StyleGAN based aging filter on a picture of the user's face before sending
+          it to the screen hidden behind the gilded frame. The screen adjusted in near realtime and the viewer would see their face depicted as
+          older the closer they stepped to the camera. Between the dark lighting and us using a somewhat temperamental algorithm for recognising faces
+          the results became quite distorted. This gave them an emergent eerie quality that would have been hard to achieve had we set out to do it deliberately.
+        </p>
+        <div class="project-gallery">
+          <img class="gallery-thumb" src="images/Mirror-secondary.jpg" alt="Mirror secondary" loading="lazy">
+          <img class="gallery-thumb" src="images/Mirror-tertiary.jpg" alt="Mirror tertiary" loading="lazy">
+        </div>
+      </article>
+
+      <article class="project">
         <h2 class="project-title">L-System Gardens</h2>
         <img class="project-hero" src="images/LSystem-best.jpg" alt="L-System Drawing 1">
         <p class="project-text">
@@ -67,7 +84,8 @@
         <h2 class="project-title">Rorschach Photography</h2>
         <img class="project-hero" src="images/camera-primary.jpg" alt="L-System Drawing 1">
         <p class="project-text">
-          [description of camera project]
+          This project began as a group project with the aim to create a co-creative AI tool, which would be able to assist a human operator during part of the creative process.
+          We decided it would be interesting to experiment on the basic assumptions behind these sorts of tools and therefore chose to test what would happen if we created a tool which gave ambiguous feedback in the form of a Rorschach blot integrated into a camera screen. The trick was that the participants in our experiment were told that the Rorschach blot relied on a sophisticated AI algorithm via a hoax pamphlet. We of course debriefed them after the experiment was done and revealed the trick, but before we did so we interviewed them about how they had experienced taking pictures with the modified camera. The results of the interviews indicated that an ambiguous system such as the one we built could stimulate creative engagement, but only when participants did not feel like they were under pressure to understand the "right" way to use the system. We presented our research at the 3rd Frictional AI Workshop in 2026.
         </p>
         <div class="project-gallery">
           <img class="gallery-thumb" src="images/camera-secondary.jpg" alt="L-System Drawing 2" loading="lazy">
@@ -83,29 +101,12 @@
           explore networked data by flying through a 3D representation of it in virtual reality would help them to better understand how things were connected.
           As our dataset we chose the filmography of Tarantino films along with all the actors who have acted in at least two of them. By connecting each actor
           to each film they had acted in a complicated web representing the clique surrounding the director was created. I taught myself how to use Unity to 
-          program an interactive virtual reality system for the (by then already quite old) Oculus Go headset. Results from user testing were mixed, but this may
-          have been down to the nausea created by the older headset.
+          program an interactive virtual reality system for the (by then already quite old) Oculus Go headset. 
+          Results from user testing were inconclusive and seemed to suggest that, contrary to our expectations, a 2D representation gives an equally vivid understanding of the details of a network.
         </p>
         <div class="project-gallery">
           <img class="gallery-thumb" src="images/VR-secondary.png" alt="VR secondary" loading="lazy">
           <img class="gallery-thumb" src="images/VR-tertiary.png" alt="VR tertiary" loading="lazy">
-        </div>
-      </article>
-
-      <article class="project">
-        <h2 class="project-title">Mirror of Time</h2>
-        <img class="project-hero" src="images/Mirror-primary.jpg" alt="Mirror" loading="lazy">
-        <p class="project-text">
-          This installation was the result of a group project and was exhibited for several days at the V2_ lab for the unstable media.
-          Visitors would walk up to a gilded frame and a webcam would quickly send a picture of their faces through a repurposed gaming PC
-          which was hidden behind a curtain. The PC would then run a StyleGAN based aging filter on a picture of the user's face before sending
-          it to the screen hidden behind the gilded frame. The screen adjusted in near realtime and the viewer would see their face depicted as
-          older the closer they stepped to the camera. Between the dark lighting and us using a somewhat temperamental algorithm for recognising faces
-          the results became quite distorted. This gave them an emergent eerie quality that would have been hard to achieve had we set out to do it deliberately.
-        </p>
-        <div class="project-gallery">
-          <img class="gallery-thumb" src="images/Mirror-secondary.jpg" alt="Mirror secondary" loading="lazy">
-          <img class="gallery-thumb" src="images/Mirror-tertiary.jpg" alt="Mirror tertiary" loading="lazy">
         </div>
       </article>
 
@@ -130,7 +131,7 @@
         <h2 class="project-title">Can GPT-4o Tell Good and Bad Poetry Apart?</h2>
         <img class="project-hero" src="images/LLM-primary.png" loading="lazy">
         <p class="project-text">
-          [LLM Experiment]
+          In this experiment I collected a set of professional quality poems from the Forward Book of Poetry and a set of amateur quality poems from r/Poem on Reddit. I made sure that the poems were published after October 2023, which is the knowledge cutoff date for GPT-4o, and then I tasked GPT-4o with assigning scores out of 100 to the poems based on literary merit. It appears that, somehow, LLMs such as GPT-4o are able to do this well enough that the amateur poem scores and the professional poem scores are statistically distinct. The question that needs to be investigated is how are they able to do this? Have they developed a sense of aesthetics or is there some heuristic trick? Could a sufficiently complex heuristic be considered a sense of aesthetics?
         </p>
         <div class="project-gallery">
           <img class="gallery-thumb" src="images/LLM-secondary.png" alt="LSTM secondary" loading="lazy">
